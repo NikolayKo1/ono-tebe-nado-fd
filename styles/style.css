@@ -1,1 +1,321 @@
-/* место для вашего кода */
+
+.header {
+    height: 293px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+}
+.logofirst {
+    display: block;
+    width: 148px;
+    height: 105px;
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    list-style-type: circle;
+}
+
+.nav {
+    white-space: nowrap;
+}
+
+.info, .looklots {
+    text-decoration: underline;
+    text-decoration-skip-ink:auto;
+    text-decoration-thickness:1px;
+    text-underline-offset:4px;
+}
+.list_non {
+    list-style: none;
+    text-align: end;
+    margin-right: 22px;
+} 
+
+li {
+    padding-right: 0;
+    column-gap: 50px;
+}
+
+.contacts {
+    margin-left: 184px;
+    margin-right: 100px;
+    white-space: initial;
+}
+
+.address {
+    list-style: none;
+    font-style: normal;
+}
+.address_number, .address_email {
+    text-decoration: underline;
+    text-decoration-skip-ink:auto;
+    text-decoration-thickness:1px;
+    text-underline-offset:4px;
+}
+
+.main {
+    width: 100%;
+    height: max-content;
+}
+
+.cover {
+    height: 757px;
+    width: 1100px;
+    overflow: hidden;
+    margin-bottom: 180px;
+}
+
+
+
+.img_container {
+    position: relative;
+    width: 1100px;
+    height: 757px;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+}
+
+.img_lotus {
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 385px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin: 0;
+  z-index: 3;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30%;
+}
+
+.title_ono {
+    text-align: start;
+}
+
+.title_tebe {
+    text-align: center;
+}
+
+.title_nado {
+    text-align: end;
+    transform: translate(20px, 0);
+}
+
+.description {
+    z-index: 3;
+    position: absolute;
+    width: 90%;
+    height: 51px;
+    color: white;
+    left: 0;
+    bottom: 0;
+    margin: 50px;
+    text-transform: uppercase;
+    align-content: center;
+    font-size: 22px;
+    word-spacing: 90%;
+}
+
+.button {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+    height: 100%;
+    border: 1px solid white;
+    justify-content: center;
+}
+
+.button_click {
+    text-decoration: none;
+    align-content: center;
+}
+
+.lots {
+    position: relative;
+    width: 100%;
+}
+
+.titlelots {
+    position: absolute;
+    top: 0;
+    left: 40;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.grid_lots {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 723px;
+    overflow: hidden;
+    gap: 25px;
+    padding-top: 74px;
+    padding-bottom: 53px;
+}
+
+.imglot1, 
+.imglot2,
+.imglot3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: block;
+}
+
+.imglot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titlots {
+    top: 0;
+    left: 0;
+    color: white;
+    position: absolute;
+    margin: 48px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-skip-ink:auto;
+    text-decoration-thickness:1px;
+    text-underline-offset:4px;
+}
+
+.textlots {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin: 48px 40px;
+    max-height: 360px;
+}
+.asidelots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 40px;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-skip-ink:auto;
+    text-decoration-thickness:1px;
+    text-underline-offset:4px;
+
+}
+
+.about {
+    position: relative;
+    width: 1052px;
+    height: 595px;
+    margin: 120px 24px 180px;
+
+}
+
+.imgwhitelogo {
+    margin: auto;
+    width: 148px;
+    height: 114px;
+}
+
+.blackitem {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border-radius: 240px;
+    background-color: black;
+    left: 47px;
+    top: 35px;
+    align-content: center;
+}
+
+.asidecont {
+    position: absolute;
+    bottom: 13px;
+    right: 0;
+    width: 693px;
+    height: 449px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.asidetext {
+    position: relative;
+}
+
+.asidetitle {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.aboutinfo {
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 24px;
+}
+
+.foother {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 180px;
+    justify-items: center;
+}
+
+.contacts_foother {
+    max-width: 265px;
+    list-style: none;
+    font-style: normal;
+}
+
+.nav_foother {
+    text-align: center;
+}
+
+.menu_nav_foother {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    list-style-type: none;
+}
+
+.img_foother {
+    width: 48px;
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: center;
+}
