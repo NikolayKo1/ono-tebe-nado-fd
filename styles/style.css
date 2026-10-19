@@ -1,10 +1,11 @@
-
 .header {
-    height: 293px;
+    padding-top: 92px;
+    padding-bottom: 96px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
 }
+
 .logofirst {
     display: block;
     width: 148px;
@@ -19,25 +20,20 @@
     list-style-type: circle;
 }
 
-.nav {
-    white-space: nowrap;
+
+
+.info,
+.looklots {
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
-.info, .looklots {
-    text-decoration: underline;
-    text-decoration-skip-ink:auto;
-    text-decoration-thickness:1px;
-    text-underline-offset:4px;
-}
-.list_non {
+.link-active {
     list-style: none;
     text-align: end;
-    margin-right: 22px;
-} 
-
-li {
-    padding-right: 0;
-    column-gap: 50px;
+    margin-right: 23%;
 }
 
 .contacts {
@@ -50,11 +46,17 @@ li {
     list-style: none;
     font-style: normal;
 }
-.address_number, .address_email {
+
+.contacts_block {
     text-decoration: underline;
-    text-decoration-skip-ink:auto;
-    text-decoration-thickness:1px;
-    text-underline-offset:4px;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.contacts_block_none {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
 }
 
 .main {
@@ -63,7 +65,7 @@ li {
 }
 
 .cover {
-    height: 757px;
+    min-height: 757px;
     width: 1100px;
     overflow: hidden;
     margin-bottom: 180px;
@@ -74,84 +76,79 @@ li {
 .img_container {
     position: relative;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     overflow: hidden;
-    object-fit: cover;
-    display: block;
+    display: flex;
+    background-size: cover;
+    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/cover.jpg');
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 180px;
 }
 
-.img_lotus {
-    width: 100%;
-    height: 100%;
-}
 .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 .title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 1000px;
-  height: 385px;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  margin: 0;
-  z-index: 3;
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 30%;
+    width: 100%;
+    padding: 165px 50px;
+    padding-bottom: 0;
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 30%;
+    display: flex;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
-.title_ono {
+.title_align_start {
     text-align: start;
 }
 
-.title_tebe {
+.title_align_center {
     text-align: center;
 }
 
-.title_nado {
+.title_align_end {
     text-align: end;
-    transform: translate(20px, 0);
+    margin-right: -20px;
 }
 
 .description {
     z-index: 3;
-    position: absolute;
-    width: 90%;
-    height: 51px;
+    display: flex;
     color: white;
-    left: 0;
-    bottom: 0;
-    margin: 50px;
     text-transform: uppercase;
-    align-content: center;
     font-size: 22px;
     word-spacing: 90%;
+    width: 100%;
+    min-height: 51px;
+    align-items: center;
+    padding: 50px;
+    padding-top: 0;
+    justify-content: space-between;
 }
 
 .button {
     display: flex;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30%;
     height: 100%;
     border: 1px solid white;
-    justify-content: center;
-}
-
-.button_click {
     text-decoration: none;
     align-content: center;
+    padding: 12px 30px;
+    background-color: unset;
+    color: white;
 }
+
 
 .lots {
     position: relative;
@@ -159,9 +156,6 @@ li {
 }
 
 .titlelots {
-    position: absolute;
-    top: 0;
-    left: 40;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: bold;
@@ -169,80 +163,76 @@ li {
 }
 
 .grid_lots {
-    height: 100%;
     width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 723px;
     overflow: hidden;
     gap: 25px;
-    padding-top: 74px;
-    padding-bottom: 53px;
+    padding-top: 27px;
 }
 
-.imglot1, 
-.imglot2,
-.imglot3 {
-    position: relative;
+.content_lot {
     width: 100%;
+    position: relative;
     height: 100%;
     overflow: hidden;
-
-    display: block;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.imglot {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.img_card_lot_01 {
+    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/card-lot-01.jpg');
+}
+
+.img_card_lot_02 {
+    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/card-lot-02.jpg');
+}
+
+.img_card_lot_03 {
+    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/card-lot-03.jpg');
 }
 
 .titlots {
-    top: 0;
-    left: 0;
     color: white;
-    position: absolute;
-    margin: 48px 40px;
+    padding: 48px 40px 0;
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: underline;
-    text-decoration-skip-ink:auto;
-    text-decoration-thickness:1px;
-    text-underline-offset:4px;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    z-index: 3;
 }
 
 .textlots {
-    bottom: 0;
-    left: 0;
-    position: absolute;
     color: white;
     font-size: 20px;
-    margin: 48px 40px;
-    max-height: 360px;
+    padding: 48px 40px;
+    z-index: 3;
+    font-weight: 400;
 }
+
 .asidelots {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     margin-left: 40px;
     font-size: 20px;
     text-decoration: underline;
-    text-decoration-skip-ink:auto;
-    text-decoration-thickness:1px;
-    text-underline-offset:4px;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 
 }
 
 .about {
     position: relative;
     width: 1052px;
-    height: 595px;
-    margin: 120px 24px 180px;
-
+    min-height: 595px;
+    padding: 120px 24px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .imgwhitelogo {
@@ -252,29 +242,21 @@ li {
 }
 
 .blackitem {
-    position: relative;
     width: 240px;
     height: 240px;
     border-radius: 240px;
     background-color: black;
-    left: 47px;
-    top: 35px;
     align-content: center;
+    margin: 35px 47px;
 }
 
 .asidecont {
-    position: absolute;
-    bottom: 13px;
-    right: 0;
     width: 693px;
-    height: 449px;
+    gap: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.asidetext {
-    position: relative;
+    margin-top: 133px;
 }
 
 .asidetitle {
@@ -288,11 +270,11 @@ li {
     padding-top: 24px;
 }
 
-.foother {
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    height: 180px;
+    min-height: 180px;
     justify-items: center;
 }
 
@@ -312,10 +294,15 @@ li {
     list-style-type: none;
 }
 
+.nav_decoration_none {
+    text-decoration: none;
+}
+
 .img_foother {
     width: 48px;
     display: flex;
     gap: 48px;
     align-items: flex-start;
     justify-content: center;
+    list-style: none;
 }
