@@ -22,8 +22,7 @@
 
 
 
-.info,
-.looklots {
+.menu_link {
     text-decoration: underline;
     text-decoration-skip-ink: auto;
     text-decoration-thickness: 1px;
@@ -34,6 +33,11 @@
     list-style: none;
     text-align: end;
     margin-right: 23%;
+    text-decoration: none;
+}
+
+.menu_link_underline_none {
+    text-decoration: none;
 }
 
 .contacts {
@@ -80,7 +84,7 @@
     overflow: hidden;
     display: flex;
     background-size: cover;
-    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/cover.jpg');
+    background-image: url('images/cover.jpg');
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +106,7 @@
     color: white;
     font-size: 100px;
     font-weight: 700;
-    letter-spacing: 30%;
+    letter-spacing: 30px;
     display: flex;
     z-index: 3;
     flex-direction: column;
@@ -183,16 +187,16 @@
     flex-direction: column;
 }
 
-.img_card_lot_01 {
-    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/card-lot-01.jpg');
+.img_card_lot_left {
+    background-image: url('images/card-lot-01.jpg');
 }
 
-.img_card_lot_02 {
-    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/card-lot-02.jpg');
+.img_card_lot_middle {
+    background-image: url('images/card-lot-02.jpg');
 }
 
-.img_card_lot_03 {
-    background-image: url('/Users/nikita/dev/first-project/ono-tebe-nado-fd/images/card-lot-03.jpg');
+.img_card_lot_right {
+    background-image: url('images/card-lot-03.jpg');
 }
 
 .titlots {
@@ -223,6 +227,7 @@
     text-decoration-skip-ink: auto;
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
+    padding-top: 30px;
 
 }
 
