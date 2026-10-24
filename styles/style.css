@@ -43,13 +43,12 @@
 .contacts {
     margin-left: 184px;
     margin-right: 51px;
-    white-space: initial;
+    white-space: "initial", "Times New Roman", serif;
     font-family: Raleway;
     font-weight: 400;
     font-size: 18px;
     line-height: 24.3px;
     letter-spacing: 0%;
-
 }
 
 .address {
@@ -177,7 +176,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    overflow: hidden;
     gap: 25px;
     padding-top: 27px;
     text-decoration: none;
@@ -192,7 +190,6 @@
     width: 100%;
     position: relative;
     min-height: 596px;
-    overflow: hidden;
     display: flex;
     background-size: cover;
     background-position: center;
@@ -291,9 +288,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    min-height: 180px;
+    padding-bottom: 82px;
     justify-items: center;
-    font-family: Raleway;
+    font-family: "Raleway", "Times New Roman", serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 24.3px;
